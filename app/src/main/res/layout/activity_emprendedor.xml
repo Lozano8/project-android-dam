@@ -2,102 +2,99 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PasEmprendedor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FFF9C4"
+    android:background="#FFF9C4"
     tools:context=".RegistroEmprendedor">
 
     <LinearLayout
+        android:id="@+id/linearLayout9"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnRegEmprendedor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrarse" />
+            android:backgroundTint="#4CAF50"
+            android:text="@string/registrarse"
+            android:textColor="#3E2723"
+            tools:ignore="TextContrastCheck" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnBorrarEmprendedor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Borrar" />
+            android:text="@string/borrar" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/bntCancEmprendedor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cancelar" />
+            android:backgroundTint="#F44336"
+            android:text="@string/cancelar"
+            android:textColor="#000000"
+            tools:ignore="TextContrastCheck" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout7"
-        android:layout_width="335dp"
-        android:layout_height="50dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65999997">
-
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Contraseña"
-            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout8"
-        android:layout_width="335dp"
-        android:layout_height="wrap_content"
+        android:layout_width="379dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="7dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58000004">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="149dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sexo"
+            android:text="@string/sexo"
             android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Femenino"
-            android:textSize="16sp" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Masculino"
-            android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="359dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/masculino"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:text="@string/femenino"
+                android:textSize="16sp" />
+        </RadioGroup>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout6"
-        android:layout_width="335dp"
-        android:layout_height="30dp"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="7dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,21 +105,23 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Ciudad"
+            android:text="@string/ciudad"
             android:textAlignment="inherit"
             android:textSize="20sp" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/SPEmprendedor"
             android:layout_width="500dp"
-            android:layout_height="25dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:clipToPadding="false"
+            android:contentDescription="@string/EMPRENDAPP"
             android:filterTouchesWhenObscured="false"
             android:focusableInTouchMode="false"
-            android:touchscreenBlocksFocus="false" />
+            android:touchscreenBlocksFocus="false"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -132,43 +131,69 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.01999998">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/NombreEmprendedor"
             android:layout_width="350dp"
-            android:layout_height="70dp"
+            android:layout_height="55dp"
+            android:autofillHints=""
             android:ems="10"
+            android:hint="@string/nombres"
             android:inputType="textPersonName"
-            android:text="Nombres" />
+            android:text="@string/nombres"
+            android:textColor="#8F3A3232"
+            tools:ignore="TextContrastCheck" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/ApellidoEmprendedor"
             android:layout_width="350dp"
-            android:layout_height="70dp"
+            android:layout_height="55dp"
+            android:autofillHints=""
             android:ems="10"
+            android:hint="@string/apellidos"
             android:inputType="textPersonName"
-            android:text="Apellidos" />
+            android:text="@string/apellidos"
+            android:textColor="#8F3A3232"
+            tools:ignore="TextContrastCheck" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName7"
-            android:layout_width="350dp"
-            android:layout_height="70dp"
+            android:id="@+id/CorreoEmprendedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Correo" />
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColor="#8F3A3232"
+            tools:text="@string/correo" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName8"
-            android:layout_width="350dp"
-            android:layout_height="70dp"
+            android:id="@+id/TelfEmprendedor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autofillHints=""
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Telefono" />
+            android:hint="@string/Teléfono"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:text="@string/telefono"
+            android:textColor="#8F3A3232"
+            tools:text="@string/telefono" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/contrasena"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:autofillHints="" />
 
     </LinearLayout>
 
@@ -185,12 +210,16 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Registro de Emprendedor"
+            android:fontFamily="@font/actor"
+            android:text="@string/registro_de_emprendedor"
             android:textAlignment="center"
-            android:textSize="28sp" />
+            android:textColor="#020202"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
