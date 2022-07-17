@@ -8,11 +8,26 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/EMPRENDAPP"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Proyecto"
+        android:theme="@style/Theme.EMPRENDAPP"
         tools:targetApi="31">
+        <activity
+            android:name=".Resena"
+            android:exported="false" />
+        <activity
+            android:name=".busquedaEmprendimiento"
+            android:exported="false" />
+        <activity
+            android:name=".MisProductos"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilEmprendedor"
+            android:exported="false" />
+        <activity
+            android:name=".InicioEmprendedor"
+            android:exported="false" />
         <activity
             android:name=".TipoUsuario"
             android:exported="false" />
