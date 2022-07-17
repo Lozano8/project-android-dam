@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9C4"
+    tools:context=".MisProductos">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="236dp"
+        android:layout_height="236dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="334dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+        <Button
+            android:id="@+id/btnIngresarProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:text="VER PRODUCTOS" />
+
+        <Button
+            android:id="@+id/btnAgregarProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AGREGAR PRODUCTOS" />
+
+        <Button
+            android:id="@+id/btnSalirProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="SALIR" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

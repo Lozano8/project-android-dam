@@ -10,15 +10,25 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="236dp"
-        android:layout_height="223dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="104dp" />
+        android:layout_height="236dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="373dp"
         android:layout_height="100dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="68dp"
         android:fontFamily="@font/actor"
         android:text="¿Qué tipo de usuario eres?"
         android:textAlignment="center"
@@ -26,15 +36,24 @@
         android:textSize="34sp"
         android:textStyle="bold"
         android:typeface="normal"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="371dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <LinearLayout
+        android:id="@+id/linearLayout7"
         android:layout_width="297dp"
         android:layout_height="104dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="225dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="539dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
 
         <Button
             android:id="@+id/btnUsuario"

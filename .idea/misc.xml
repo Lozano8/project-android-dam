@@ -3,8 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_emprendedor.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_busqueda_emprendimiento.xml" value="0.264" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_emprendedor.xml" value="0.264" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_inicio_emprendedor.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_mis_productos.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_perfil_emprendedor.xml" value="0.264" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_resena.xml" value="0.264" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_tipo_usuario.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/formularioproducto.xml" value="0.2" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/listaproductos.xml" value="0.2" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/miemprendimiento.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/producto.xml" value="0.1" />
+        <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/registroemprendimiento.xml" value="0.264" />
       </map>
     </option>
   </component>
