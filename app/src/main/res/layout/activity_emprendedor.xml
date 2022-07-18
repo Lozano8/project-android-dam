@@ -12,12 +12,11 @@
         android:id="@+id/linearLayout9"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="45dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/btnRegEmprendedor"
@@ -27,12 +26,6 @@
             android:text="@string/registrarse"
             android:textColor="#3E2723"
             tools:ignore="TextContrastCheck" />
-
-        <Button
-            android:id="@+id/btnBorrarEmprendedor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/borrar" />
 
         <Button
             android:id="@+id/bntCancEmprendedor"
@@ -46,91 +39,15 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout8"
-        android:layout_width="379dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="7dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="149dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/sexo"
-            android:textSize="20sp" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="359dp"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                android:text="@string/masculino"
-                android:textSize="16sp" />
-
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:minHeight="48dp"
-                android:text="@string/femenino"
-                android:textSize="16sp" />
-        </RadioGroup>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="387dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="7dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.04000002">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/ciudad"
-            android:textAlignment="inherit"
-            android:textSize="20sp" />
-
-        <Spinner
-            android:id="@+id/SPEmprendedor"
-            android:layout_width="500dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clipToPadding="false"
-            android:contentDescription="@string/EMPRENDAPP"
-            android:filterTouchesWhenObscured="false"
-            android:focusableInTouchMode="false"
-            android:touchscreenBlocksFocus="false"
-            tools:ignore="TouchTargetSizeCheck" />
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="250dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="277dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
@@ -189,11 +106,11 @@
             android:id="@+id/editTextTextPassword3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
             android:hint="@string/contrasena"
             android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:autofillHints="" />
+            android:minHeight="48dp" />
 
     </LinearLayout>
 
