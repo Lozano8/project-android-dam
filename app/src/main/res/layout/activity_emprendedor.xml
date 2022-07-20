@@ -10,13 +10,17 @@
 
     <LinearLayout
         android:id="@+id/linearLayout9"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
+        android:layout_width="318dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="311dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <Button
             android:id="@+id/btnRegEmprendedor"
@@ -40,21 +44,21 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="277dp"
+        android:layout_width="342dp"
+        android:layout_height="271dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="95dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <EditText
             android:id="@+id/NombreEmprendedor"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="55dp"
             android:autofillHints=""
             android:ems="10"
@@ -66,7 +70,7 @@
 
         <EditText
             android:id="@+id/ApellidoEmprendedor"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="55dp"
             android:autofillHints=""
             android:ems="10"
@@ -85,13 +89,13 @@
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            android:textColor="#8F3A3232"
+            android:textColor="#2E7D32"
             tools:text="@string/correo" />
 
         <EditText
             android:id="@+id/TelfEmprendedor"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="59dp"
             android:layout_weight="1"
             android:autofillHints=""
             android:ems="10"
@@ -105,7 +109,7 @@
         <EditText
             android:id="@+id/editTextTextPassword3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/contrasena"
@@ -125,18 +129,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.01999998">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/actor"
-            android:text="@string/registro_de_emprendedor"
-            android:textAlignment="center"
-            android:textColor="#020202"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="410dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="21dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/actor"
+        android:text="@string/registro_de_emprendedor"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
