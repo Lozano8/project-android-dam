@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF9C4"
     tools:context=".RegistroUsuario">
 
     <TextView
@@ -18,8 +19,9 @@
         tools:layout_editor_absoluteY="31dp" />
 
     <LinearLayout
-        android:layout_width="384dp"
-        android:layout_height="269dp"
+        android:id="@+id/linearLayout6"
+        android:layout_width="388dp"
+        android:layout_height="240dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:orientation="vertical"
@@ -67,5 +69,63 @@
             android:hint="Ingrese una contraseña"
             android:inputType="numberPassword" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <EditText
+            android:id="@+id/txtEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Ingrese su edad"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txtTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Ingrese su Telefono"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="164dp"
+        android:layout_height="155dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="430dp">
+
+        <Button
+            android:id="@+id/btnRegistrarU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btnBorrarU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Borrar" />
+
+        <Button
+            android:id="@+id/btnCancelarU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="Cancelar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
