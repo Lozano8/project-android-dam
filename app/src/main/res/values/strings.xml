@@ -72,4 +72,9 @@
     <string name="nombreListaProducto">Nombre</string>
     <string name="buscarListaProducto">BUSCAR</string>
     <string name="nombre_del_producto">Nombre del Producto</string>
+    <string name="agregar_productos">AGREGAR PRODUCTOS</string>
+    <string name="borraremprendimiento">Borrar</string>
+    <string name="descripcionEmprendimiento">Descripcion</string>
+    <string name="categoriaEmprendimiento">Categoria</string>
+    <string name="nombreEmprendimientoRegistro">Nombre</string>
 </resources>

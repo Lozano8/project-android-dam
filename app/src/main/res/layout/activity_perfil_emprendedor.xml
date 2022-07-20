@@ -75,11 +75,11 @@
             android:id="@+id/NombrePerfilEmprendedor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
+            android:hint="Nombre"
             android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="@string/nombre"
-            android:autofillHints="" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/ApellPerfilEmprendedor"
@@ -87,9 +87,9 @@
             android:layout_height="wrap_content"
             android:autofillHints=""
             android:ems="10"
+            android:hint="Apellido"
             android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="@string/apellido" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"

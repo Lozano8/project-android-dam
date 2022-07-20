@@ -14,17 +14,21 @@
         android:layout_marginStart="88dp"
         android:layout_marginTop="106dp"
         android:layout_marginEnd="88dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="TODO" />
 
     <LinearLayout
-        android:layout_width="347dp"
+        android:id="@+id/linearLayout6"
+        android:layout_width="341dp"
         android:layout_height="160dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="37dp"
         android:layout_marginTop="55dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginEnd="37dp"
         android:layout_marginBottom="334dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,19 +41,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#4CAF50"
-            android:text="VER PRODUCTOS" />
+            android:text="VER PRODUCTOS"
+            android:textColor="#3E2723" />
 
         <Button
             android:id="@+id/btnAgregarProductos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="AGREGAR PRODUCTOS" />
+            android:text="@string/agregar_productos" />
 
         <Button
             android:id="@+id/btnSalirProductos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F44336"
-            android:text="SALIR" />
+            android:minHeight="48dp"
+            android:text="SALIR"
+            android:textColor="#000000" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
