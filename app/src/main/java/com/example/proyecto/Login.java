@@ -70,7 +70,7 @@ public class Login extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
                         Toast.makeText(Login.this, "Bienvenid@", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(Login.this, TipoUsuario.class));
+                        startActivity(new Intent(Login.this, Dashboard.class));
                     }else{
                         Log.w("TAG", "Error: ", task.getException());
                     }

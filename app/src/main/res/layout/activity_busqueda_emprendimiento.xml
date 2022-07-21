@@ -14,9 +14,7 @@
         android:layout_marginStart="37dp"
         android:layout_marginTop="63dp"
         android:layout_marginEnd="29dp"
-        android:layout_marginBottom="32dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -26,99 +24,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/actor"
-            android:text="@string/emprTitulo"
+            android:text="Emprendimientos"
             android:textAlignment="center"
             android:textColor="#171616"
             android:textSize="24sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout17"
-        android:layout_width="347dp"
-        android:layout_height="154dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="25dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout19">
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="34dp"
-            android:fontFamily="@font/actor"
-            android:text="@string/ingrese_nombre_de_emprendimiento"
-            android:textColor="#050505"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/nombreEmprendimiento"
-            android:textColor="#616161" />
-
-        <Button
-            android:id="@+id/btnBuscarEmprendimiento"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:text="@string/buscarEmprendimiento" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout16"
-        android:layout_width="355dp"
-        android:layout_height="153dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout17">
-
-        <EditText
-            android:id="@+id/NombreEmprendimiento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="@string/nombre_de_emprendimiento"
-            android:textColor="#616161" />
-
-        <EditText
-            android:id="@+id/DireccionEmprendimiento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="@string/direccion_de_emprendimiento"
-            android:textColor="#616161" />
-
-        <EditText
-            android:id="@+id/ContactoEmprendimiento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/contactoEmprendimiento"
-            android:inputType="phone"
-            android:minHeight="48dp"
-            android:textColorHint="#2E7D32" />
     </LinearLayout>
 
     <LinearLayout
@@ -126,21 +35,19 @@
         android:layout_width="364dp"
         android:layout_height="105dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="3dp"
         android:layout_marginEnd="37dp"
-        android:layout_marginBottom="282dp"
+        android:layout_marginBottom="20dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/Reseña"
+            android:id="@+id/Resenia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#4CAF50"
-            android:text="@string/agregar_resena"
+            android:text="agregar comentarios"
             android:textColor="#3E2723" />
 
         <Button
@@ -151,4 +58,13 @@
             android:text="@string/salirBusqueda"
             android:textColor="#000000" />
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewEmprendimeinto"
+        android:layout_width="409dp"
+        android:layout_height="389dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout19" />
 </androidx.constraintlayout.widget.ConstraintLayout>
