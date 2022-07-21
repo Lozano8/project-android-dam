@@ -117,12 +117,12 @@
         android:layout_width="362dp"
         android:layout_height="145dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="6dp"
         android:layout_marginEnd="37dp"
-        android:layout_marginBottom="157dp"
+        android:layout_marginBottom="25dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout25">
 

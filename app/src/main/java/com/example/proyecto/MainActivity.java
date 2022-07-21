@@ -2,6 +2,7 @@ package com.example.proyecto;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if(user == null){
+            Log.i("TAG", "userLogin: entando");
             startActivity(new Intent(MainActivity.this, Login.class ));
         }
     }

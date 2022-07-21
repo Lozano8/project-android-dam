@@ -56,6 +56,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void userLogin(){
+        Log.i("TAG", "userLogin: entando");
         String mail = usuario.getText().toString().trim();
         String password = contraseña.getText().toString().trim();
 

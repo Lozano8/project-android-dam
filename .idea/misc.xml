@@ -3,12 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_busqueda_emprendimiento.xml" value="0.17401215805471124" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_emprendedor.xml" value="0.25" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_inicio_emprendedor.xml" value="0.33" />
-        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_inicio_usuario.xml" value="0.33" />
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_mis_productos.xml" value="0.25" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_perfil_emprendedor.xml" value="0.33" />
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_perfil_usuario.xml" value="0.25" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_resena.xml" value="0.17401215805471124" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_tipo_usuario.xml" value="0.17401215805471124" />
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/formularioproducto.xml" value="0.25" />
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/listaproductos.xml" value="0.33" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/registroemprendimiento.xml" value="0.17401215805471124" />
         <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_busqueda_emprendimiento.xml" value="0.264" />
         <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_emprendedor.xml" value="0.264" />
@@ -29,10 +35,9 @@
         <entry key="..\:/Users/bryan/OneDrive/Documentos/GitHub/project-android-dam/app/src/main/res/layout/activity_emprendedor.xml" value="0.1" />
         <entry key="..\:/Users/bryan/OneDrive/Documentos/GitHub/project-android-dam/app/src/main/res/layout/activity_login.xml" value="0.16757246376811594" />
         <entry key="..\:/Users/bryan/OneDrive/Documentos/GitHub/project-android-dam/app/src/main/res/layout/activity_perfil_emprendedor.xml" value="0.16757246376811594" />
-        <entry key="..\:/Users/bryan/OneDrive/Documentos/GitHub/project-android-dam/app/src/main/res/layout/activity_perfil_usuario.xml" value="0.16757246376811594" />
-        <entry key="..\:/Users/bryan/OneDrive/Documentos/GitHub/project-android-dam/app/src/main/res/layout/activity_registro_usuario.xml" value="0.21" />
+        <entry key="..\:/Users/bryan/OneDrive/Documentos/GitHub/project-android-dam/app/src/main/res/layout/activity_registro_usuario.xml" value="0.16757246376811594" />
         <entry key="..\:/Users/bryan/OneDrive/Documentos/GitHub/project-android-dam/app/src/main/res/layout/activity_tipo_usuario.xml" value="0.16757246376811594" />
-        <entry key="..\:/Users/bryan/OneDrive/Documentos/GitHub/project-android-dam/app/src/main/res/layout/registroemprendimiento.xml" value="0.21" />
+        <entry key="..\:/Users/bryan/OneDrive/Documentos/GitHub/project-android-dam/app/src/main/res/layout/registroemprendimiento.xml" value="0.16757246376811594" />
         <entry key="..\:/Users/bryan/OneDrive/Documentos/GitHub/project-android-dam/app/src/main/res/layout/registrousuario.xml" value="0.16757246376811594" />
       </map>
     </option>
