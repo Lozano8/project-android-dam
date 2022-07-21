@@ -40,7 +40,7 @@ public class RegistroUsuario extends AppCompatActivity {
         Email= findViewById(R.id.txtEmail);
         Telefono= findViewById(R.id.txtTelefono);
         Edad= findViewById(R.id.txtEdad);
-        Contra= findViewById(R.id.txtPassword);
+        Contra= findViewById(R.id.txtContraseña);
 
         Registrar= findViewById(R.id.btnRegistrarU);
         Borrar= findViewById(R.id.btnBorrarU);
