@@ -23,9 +23,6 @@
             android:name=".Resena"
             android:exported="false" />
         <activity
-            android:name=".busquedaEmprendimiento"
-            android:exported="false" />
-        <activity
             android:name=".MisProductos"
             android:exported="false" />
         <activity
@@ -51,6 +48,17 @@
         </activity>
         <activity
             android:name=".RegistroEmprendedor"
+            android:exported="false" />
+
+        <activity
+            android:name=".InicioUsuario"
+            android:exported="false" />
+
+        <activity
+            android:name=".BusquedaEmprendimeinto"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
             android:exported="false" />
 
         <meta-data

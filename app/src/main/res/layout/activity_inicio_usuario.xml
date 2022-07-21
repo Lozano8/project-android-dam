@@ -37,15 +37,15 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <Button
-            android:id="@+id/btnCrearEmprendimiento"
+            android:id="@+id/btnMiperfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#4CAF50"
-            android:text="@string/crear_nuevo_emprendimiento"
+            android:text="Mi perfil"
             android:textColor="#3E2723" />
 
         <Button
-            android:id="@+id/btnCrearEmprendimiento2"
+            android:id="@+id/btnlistarEmprendimientos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#4CAF50"
@@ -53,7 +53,7 @@
             android:textColor="#3E2723" />
 
         <Button
-            android:id="@+id/btnSalirInicEmprendedor"
+            android:id="@+id/btnSalirEmp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F44336"
