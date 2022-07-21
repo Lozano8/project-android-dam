@@ -89,7 +89,9 @@ public class RegistroUsuario extends AppCompatActivity {
                         user.put("Apellido",lastname);
                         user.put("Correo",mail);
                         user.put("Telefono",phone);
+                        user.put("Usuario",usuario);
                         user.put("Contrasenia",password);
+                        user.put("Edad",edad);
                         user.put("type","emp");
 
                         documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
