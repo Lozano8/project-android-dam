@@ -16,41 +16,48 @@
         tools:layout_editor_absoluteY="63dp" />
 
     <LinearLayout
-        android:layout_width="397dp"
-        android:layout_height="242dp"
+        android:id="@+id/linearLayout28"
+        android:layout_width="365dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="83dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <EditText
             android:id="@+id/txtNombreM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/txtApellidoM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Apellido"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/txtUsuarioM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Usuario"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Password"
             android:inputType="textPassword" />
 
         <EditText
@@ -58,16 +65,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Correo"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout27"
         android:layout_width="397dp"
         android:layout_height="77dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="7dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="325dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout28">
 
         <EditText
             android:id="@+id/editTextNumber2"
@@ -91,9 +101,10 @@
     <LinearLayout
         android:layout_width="213dp"
         android:layout_height="120dp"
+        android:layout_marginTop="33dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="430dp">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout27"
+        tools:layout_editor_absoluteX="108dp">
 
         <Button
             android:id="@+id/button2"
@@ -105,6 +116,7 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
             android:text="Cacncelar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
