@@ -26,7 +26,7 @@
             android:name=".MisProductos"
             android:exported="false" />
         <activity
-            android:name=".PerfilEmprendedor"
+            android:name=".RegistroEmprendimiento"
             android:exported="false" />
         <activity
             android:name=".InicioEmprendedor"

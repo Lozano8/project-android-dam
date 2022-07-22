@@ -22,7 +22,7 @@ public class InicioUsuario extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        miPerfil = findViewById(R.id.btnMiperfil);
+        miPerfil = findViewById(R.id.btnCrearEmprendimiento);
         listarEmprendimientos = findViewById(R.id.btnlistarEmprendimientos);
         salir = findViewById(R.id.btnSalirEmp);
 
