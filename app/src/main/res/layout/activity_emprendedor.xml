@@ -15,7 +15,7 @@
         android:layout_marginStart="37dp"
         android:layout_marginTop="95dp"
         android:layout_marginEnd="37dp"
-        android:layout_marginBottom="311dp"
+        android:layout_marginBottom="150dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,8 +64,8 @@
             android:ems="10"
             android:hint="@string/nombres"
             android:inputType="textPersonName"
-            android:text="@string/nombres"
             android:textColor="#8F3A3232"
+            android:textColorHint="#787777"
             tools:ignore="TextContrastCheck" />
 
         <EditText
@@ -76,21 +76,9 @@
             android:ems="10"
             android:hint="@string/apellidos"
             android:inputType="textPersonName"
-            android:text="@string/apellidos"
             android:textColor="#8F3A3232"
+            android:textColorHint="#787777"
             tools:ignore="TextContrastCheck" />
-
-        <EditText
-            android:id="@+id/CorreoEmprendedor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp"
-            android:textColor="#2E7D32"
-            tools:text="@string/correo" />
 
         <EditText
             android:id="@+id/TelfEmprendedor"
@@ -102,9 +90,21 @@
             android:hint="@string/Teléfono"
             android:inputType="phone"
             android:minHeight="48dp"
-            android:text="@string/telefono"
             android:textColor="#8F3A3232"
+            android:textColorHint="#787777"
             tools:text="@string/telefono" />
+
+        <EditText
+            android:id="@+id/CorreoEmprendedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColor="#515050"
+            android:textColorHint="#787777" />
 
         <EditText
             android:id="@+id/editTextTextPassword3"
@@ -114,7 +114,9 @@
             android:ems="10"
             android:hint="@string/contrasena"
             android:inputType="textPassword"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:textColorHint="#787777" />
 
     </LinearLayout>
 
