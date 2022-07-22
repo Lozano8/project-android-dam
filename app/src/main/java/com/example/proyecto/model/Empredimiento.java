@@ -1,14 +1,15 @@
 package com.example.proyecto.model;
 
 public class Empredimiento {
-    String nombre, direccion, contacto;
+    String nombre, direccion, contacto, descripcion;
 
     public Empredimiento(){}
 
-    public Empredimiento(String nombre, String direccion, String contacto) {
+    public Empredimiento(String nombre, String direccion, String contacto, String descripcion) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.contacto = contacto;
+        this.descripcion=descripcion;
     }
 
     public String getNombre() {
@@ -33,5 +34,13 @@ public class Empredimiento {
 
     public void setContacto(String contacto) {
         this.contacto = contacto;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 }
