@@ -24,12 +24,6 @@
             android:textColor="#3E2723" />
 
         <Button
-            android:id="@+id/btnBorrarEmprendimiento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/borraremprendimiento" />
-
-        <Button
             android:id="@+id/btnCancelarEmprendimiento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -64,25 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.04000002">
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:hint="Categoría"
-            android:text="@string/categoriaEmprendimiento"
-            android:textAlignment="center"
-            android:textColor="#302A2A"
-            android:textColorHint="#434242"
-            android:textSize="20sp" />
-
-        <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-    </LinearLayout>
+        app:layout_constraintVertical_bias="0.04000002"/>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -101,9 +77,9 @@
             android:layout_height="70dp"
             android:autofillHints=""
             android:ems="10"
-            android:hint="Ingrese su nombre"
             android:inputType="textPersonName"
-            android:textColorHint="#434242"
+            android:text="@string/nombreEmprendimientoRegistro"
+            android:textColor="#090909"
             android:textSize="18sp" />
 
         <EditText
@@ -112,9 +88,9 @@
             android:layout_height="70dp"
             android:autofillHints=""
             android:ems="10"
-            android:hint="Ingrese descripción"
             android:inputType="textPersonName"
-            android:textColorHint="#434242" />
+            android:text="@string/descripcionEmprendimiento"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/DirecEmprendimiento"
@@ -122,9 +98,9 @@
             android:layout_height="70dp"
             android:autofillHints=""
             android:ems="10"
-            android:hint="Ingrese dirección"
             android:inputType="textPersonName"
-            android:textColorHint="#434242" />
+            android:text="Direccion"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/ContacEmprendimiento"
@@ -132,10 +108,10 @@
             android:layout_height="59dp"
             android:autofillHints=""
             android:ems="10"
-            android:hint="Ingrese un contacto"
             android:inputType="phone"
             android:minHeight="48dp"
-            android:textColorHint="#434242" />
+            android:text="@string/contacto"
+            android:textColor="#000000" />
 
     </LinearLayout>
 
