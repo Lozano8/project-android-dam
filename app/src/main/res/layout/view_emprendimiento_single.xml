@@ -24,6 +24,13 @@
                 android:text="Nombre"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/descriptionEmpren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="20sp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

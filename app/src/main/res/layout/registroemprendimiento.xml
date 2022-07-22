@@ -77,9 +77,10 @@
             android:layout_height="70dp"
             android:autofillHints=""
             android:ems="10"
+            android:hint="Nombre"
             android:inputType="textPersonName"
-            android:text="@string/nombreEmprendimientoRegistro"
             android:textColor="#090909"
+            android:textColorHint="#494747"
             android:textSize="18sp" />
 
         <EditText
@@ -88,9 +89,10 @@
             android:layout_height="70dp"
             android:autofillHints=""
             android:ems="10"
+            android:hint="@string/descripcionEmprendimiento"
             android:inputType="textPersonName"
-            android:text="@string/descripcionEmprendimiento"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textColorHint="#515050" />
 
         <EditText
             android:id="@+id/DirecEmprendimiento"
@@ -98,9 +100,10 @@
             android:layout_height="70dp"
             android:autofillHints=""
             android:ems="10"
+            android:hint="Direccion"
             android:inputType="textPersonName"
-            android:text="Direccion"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textColorHint="#676565" />
 
         <EditText
             android:id="@+id/ContacEmprendimiento"
@@ -108,10 +111,11 @@
             android:layout_height="59dp"
             android:autofillHints=""
             android:ems="10"
+            android:hint="@string/contacto"
             android:inputType="phone"
             android:minHeight="48dp"
-            android:text="@string/contacto"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textColorHint="#6C6A6A" />
 
     </LinearLayout>
 

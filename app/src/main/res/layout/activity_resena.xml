@@ -65,10 +65,11 @@
             android:layout_height="142dp"
             android:autofillHints=""
             android:ems="10"
+            android:hint="Escribe aqui..."
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Escribe aqui..."
-            android:textColor="#80100F0F" />
+            android:textColor="#800E0E0E"
+            android:textColorHint="#3C3A3A" />
 
     </LinearLayout>
 

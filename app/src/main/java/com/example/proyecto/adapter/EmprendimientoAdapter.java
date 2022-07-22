@@ -29,6 +29,8 @@ public class EmprendimientoAdapter extends FirestoreRecyclerAdapter<Empredimient
         holder.nombre.setText(model.getNombre());
         holder.contacto.setText(model.getContacto());
         holder.direccion.setText(model.getDireccion());
+        holder.descripcion.setText(model.getDescripcion());
+
     }
 
     @NonNull
@@ -40,13 +42,14 @@ public class EmprendimientoAdapter extends FirestoreRecyclerAdapter<Empredimient
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView nombre, direccion, contacto;
+        TextView nombre, direccion, contacto, descripcion;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             nombre = itemView.findViewById(R.id.nombreEmprendimiento);
             direccion = itemView.findViewById(R.id.contactoEmprendimeinto);
             contacto = itemView.findViewById(R.id.direccionEmprendimiento);
+            descripcion = itemView.findViewById(R.id.descriptionEmpren);
         }
     }
 }

@@ -25,7 +25,7 @@ import java.util.Map;
 
 public class RegistroUsuario extends AppCompatActivity {
     private Button Registrar, Cancelar, Borrar;
-    private EditText Nombre, Apellido, Email, Telefono, Contra, Usuario, Edad;
+    private EditText Nombre, Apellido, Email, Telefono, Contra;
     private String usuarioId;
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
@@ -36,11 +36,12 @@ public class RegistroUsuario extends AppCompatActivity {
         setContentView(R.layout.activity_registro_usuario);
         Nombre= findViewById(R.id.txtNombre);
         Apellido= findViewById(R.id.txtApellido);
-        Usuario= findViewById(R.id.txtUsuario);
         Email= findViewById(R.id.txtEmail);
         Telefono= findViewById(R.id.txtTelefono);
-        Edad= findViewById(R.id.txtEdad);
         Contra= findViewById(R.id.txtContraseña);
+
+        mAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
 
         Registrar= findViewById(R.id.btnRegistrarU);
         Borrar= findViewById(R.id.btnBorrarU);
@@ -57,11 +58,9 @@ public class RegistroUsuario extends AppCompatActivity {
     public void createUser() {
         String name = Nombre.getText().toString().trim();
         String lastname = Apellido.getText().toString().trim();
-        String usuario = Usuario.getText().toString().trim();
         String mail = Email.getText().toString().trim();
         String phone = Telefono.getText().toString().trim();
         String password = Contra.getText().toString().trim();
-        String edad = Edad.getText().toString().trim();
 
         if(TextUtils.isEmpty(name)){
             Toast.makeText(RegistroUsuario.this, "Ingrese un Nombre", Toast.LENGTH_SHORT).show();
@@ -73,10 +72,6 @@ public class RegistroUsuario extends AppCompatActivity {
             Toast.makeText(RegistroUsuario.this, "Ingrese un Número de Telefono", Toast.LENGTH_SHORT).show();
         }else if(TextUtils.isEmpty(password)){
             Toast.makeText(RegistroUsuario.this, "Ingrese una Contraseña", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(usuario)) {
-            Toast.makeText(RegistroUsuario.this, "Ingrese un Usuario", Toast.LENGTH_SHORT).show();
-        }else if(TextUtils.isEmpty(edad)){
-            Toast.makeText(RegistroUsuario.this, "Ingrese una Edad", Toast.LENGTH_SHORT).show();
         } else {
             mAuth.createUserWithEmailAndPassword(mail, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
@@ -89,10 +84,8 @@ public class RegistroUsuario extends AppCompatActivity {
                         user.put("Apellido",lastname);
                         user.put("Correo",mail);
                         user.put("Telefono",phone);
-                        user.put("Usuario",usuario);
                         user.put("Contrasenia",password);
-                        user.put("Edad",edad);
-                        user.put("type","emp");
+                        user.put("type","user");
 
                         documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
@@ -100,8 +93,8 @@ public class RegistroUsuario extends AppCompatActivity {
                                 Log.d("TAG", "onSucess: Datos Registrados ");
                             }
                         });
-                        Toast.makeText(RegistroUsuario.this, "Usuario Registrado: ", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(RegistroUsuario.this, InicioEmprendedor.class));
+                        Toast.makeText(RegistroUsuario.this, "Usuario Registrado", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(RegistroUsuario.this, InicioUsuario.class));
                     }else {
                         Toast.makeText(RegistroUsuario.this, "Usuario No Registrado: "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }

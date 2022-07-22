@@ -34,6 +34,7 @@
         android:text="¿Qué tipo de usuario eres?"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
         android:textSize="34sp"
         android:textStyle="bold"
         android:typeface="normal"
