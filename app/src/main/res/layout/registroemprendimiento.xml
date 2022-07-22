@@ -70,9 +70,11 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:hint="Categoría"
             android:text="@string/categoriaEmprendimiento"
             android:textAlignment="center"
             android:textColor="#302A2A"
+            android:textColorHint="#434242"
             android:textSize="20sp" />
 
         <Spinner
@@ -99,8 +101,9 @@
             android:layout_height="70dp"
             android:autofillHints=""
             android:ems="10"
+            android:hint="Ingrese su nombre"
             android:inputType="textPersonName"
-            android:text="@string/nombreEmprendimientoRegistro"
+            android:textColorHint="#434242"
             android:textSize="18sp" />
 
         <EditText
@@ -109,8 +112,9 @@
             android:layout_height="70dp"
             android:autofillHints=""
             android:ems="10"
+            android:hint="Ingrese descripción"
             android:inputType="textPersonName"
-            android:text="@string/descripcionEmprendimiento" />
+            android:textColorHint="#434242" />
 
         <EditText
             android:id="@+id/DirecEmprendimiento"
@@ -118,8 +122,9 @@
             android:layout_height="70dp"
             android:autofillHints=""
             android:ems="10"
+            android:hint="Ingrese dirección"
             android:inputType="textPersonName"
-            android:text="Direccion" />
+            android:textColorHint="#434242" />
 
         <EditText
             android:id="@+id/ContacEmprendimiento"
@@ -127,9 +132,10 @@
             android:layout_height="59dp"
             android:autofillHints=""
             android:ems="10"
+            android:hint="Ingrese un contacto"
             android:inputType="phone"
             android:minHeight="48dp"
-            android:text="@string/contacto" />
+            android:textColorHint="#434242" />
 
     </LinearLayout>
 
