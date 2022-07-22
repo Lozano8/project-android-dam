@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -48,6 +50,27 @@ public class Login extends AppCompatActivity {
                 userLogin();
             }
         });
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menug, menu);
+        return true;
+
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+
+        if(id == R.id.acercade){
+            Toast.makeText( this,"Acerca de", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, AcercaDE.class);
+            startActivity(intent);
+        }  else if(id == R.id.descripcion){
+            Toast.makeText( this,"Descripcion", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, DescripcionDE.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void openRegisterActivity(){

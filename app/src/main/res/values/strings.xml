@@ -77,4 +77,6 @@
     <string name="descripcionEmprendimiento">Descripcion</string>
     <string name="categoriaEmprendimiento">Categoria</string>
     <string name="nombreEmprendimientoRegistro">Nombre</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="decripcion">Decripcion</string>
 </resources>
