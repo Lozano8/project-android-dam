@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         FirebaseUser user = mAuth.getCurrentUser();
         if(user == null){
-            Log.i("TAG", "userLogin: entando");
+            Log.i("TAG", "userLogin: entrando");
             startActivity(new Intent(MainActivity.this, Login.class ));
         }
     }

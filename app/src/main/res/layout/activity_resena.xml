@@ -27,7 +27,7 @@
             android:layout_height="51dp"
             android:layout_weight="1"
             android:fontFamily="@font/actor"
-            android:text="@string/resena"
+            android:text="Comentario"
             android:textAlignment="center"
             android:textColor="#151414"
             android:textSize="24sp"
@@ -60,31 +60,26 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/resena"
+            android:id="@+id/comment"
             android:layout_width="match_parent"
-            android:layout_height="136dp"
+            android:layout_height="142dp"
             android:autofillHints=""
-            android:background="#45D0C3E6"
-            android:backgroundTintMode="src_atop"
             android:ems="10"
-            android:gravity="start|top"
-            android:hint="@string/OpinionResena"
-            android:inputType="textMultiLine"
-            android:selectAllOnFocus="false"
-            android:singleLine="false"
-            android:textColorHint="#616161"
-            android:typeface="sans"
-            android:visibility="visible" />
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Escribe aqui..."
+            android:textColor="#80100F0F" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout22"
         android:layout_width="338dp"
-        android:layout_height="164dp"
+        android:layout_height="100dp"
         android:layout_marginStart="37dp"
         android:layout_marginTop="43dp"
         android:layout_marginEnd="37dp"
-        android:layout_marginBottom="356dp"
+        android:layout_marginBottom="100dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,13 +95,7 @@
             android:textColor="#3E2723" />
 
         <Button
-            android:id="@+id/btnModifResena"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/modificarResena" />
-
-        <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnCancelarResenia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F44336"

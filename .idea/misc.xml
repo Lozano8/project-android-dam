@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_busqueda_emprendimiento.xml" value="0.17401215805471124" />
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_busqueda_emprendimiento.xml" value="0.33" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_emprendedor.xml" value="0.25" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_inicio_emprendedor.xml" value="0.33" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_inicio_usuario.xml" value="0.33" />
@@ -11,11 +11,13 @@
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_mis_productos.xml" value="0.25" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_perfil_emprendedor.xml" value="0.33" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_perfil_usuario.xml" value="0.25" />
-        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_resena.xml" value="0.17401215805471124" />
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_resena.xml" value="0.25" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_tipo_usuario.xml" value="0.17401215805471124" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/formularioproducto.xml" value="0.25" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/listaproductos.xml" value="0.33" />
         <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/registroemprendimiento.xml" value="0.17401215805471124" />
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/view_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/Lozano7/Documents/GitHub/project-android-dam/app/src/main/res/layout/view_emprendimiento_single.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_busqueda_emprendimiento.xml" value="0.264" />
         <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_emprendedor.xml" value="0.264" />
         <entry key="..\:/Users/Usuario/Documents/GitHub/project-android-dam/app/src/main/res/layout/activity_inicio_emprendedor.xml" value="0.20863616930312098" />
