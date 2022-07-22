@@ -22,12 +22,20 @@ public class InicioEmprendedor extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         salir= findViewById(R.id.btnSalirEmp);
+        crearEmprendimiento= findViewById(R.id.btnCrearEmprendimiento);
+
         salir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mAuth.signOut();
                 Toast.makeText(InicioEmprendedor.this, "Sesión Cerrada", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(InicioEmprendedor.this, Login.class));
+            }
+        });
+        crearEmprendimiento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(InicioEmprendedor.this, RegistroEmprendimiento.class));
             }
         });
     }
